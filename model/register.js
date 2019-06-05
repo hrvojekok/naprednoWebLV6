@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
-var blobSchema = new mongoose.Schema({
+var registerSchema = new mongoose.Schema({
   firstName: String,
   lastName: String,
   email: String,
   password: Password,
   dob: { type: Date, default: Date.now }
 });
-mongoose.model('Register', blobSchema);
+mongoose.model('Register', registerSchema);

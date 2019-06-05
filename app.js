@@ -10,7 +10,8 @@ var db = require('./model/db'),
 
 var routes = require('./routes/index'),
     blobs = require('./routes/blobs'),
-    register = require('./routes/register');
+    register = require('./routes/register'),
+    login = require('./routes/login');
 
 //var users = require('./routes/users');
 
@@ -31,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/blobs', blobs);
 app.use('/register', register);
+app.use('/login', login);
 //app.use('/users', users);
 
 // catch 404 and forward to error handler

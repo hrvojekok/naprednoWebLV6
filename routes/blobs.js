@@ -92,6 +92,10 @@ router.get('/register', function(req, res) {
     res.render('blobs/register', { title: 'Register' });
 });
 
+router.get('/login', function(req, res) {
+    res.render('blobs/login', { title: 'Login' });
+});
+
 // route middleware to validate :id
 router.param('id', function(req, res, next, id) {
     //console.log('validating ' + id + ' exists');
